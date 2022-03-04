@@ -1,6 +1,6 @@
 let valorBitcoin = 193695.26;
 let valorPVU = 0.27;
-let valorETH = 13370.65;
+let valorETH = 13767.61
 
 // let valorDolar = ;
 // let valorEuro = ;
