@@ -22,16 +22,13 @@ function getPrice(quantas, moedaEntrada, moedaSaida, callback) {
 }
 https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=brl
 
-function transformaCripto(option){
+function transformaNomes(option,optionFinal){
     switch(option){
         case 'BTC': criptoName = 'bitcoin';break;
         case 'ETH': criptoName = 'ethereum';break;
         case 'PVU': criptoName = 'plant-vs-undead-token';break;
         default:console.log("algo deu errado");
     }
-
-}
-function transformaFinalcoin(optionFinal){
     switch(optionFinal){
         case 'BRL': finalCoinName = 'brl'; break;
         case 'USD': finalCoinName = 'usd';break;
@@ -45,8 +42,7 @@ function ativarBotao() {
     var option = select.options[select.selectedIndex].value;
     var selectFinal = document.getElementById('moeda-tradicional');
     var optionFinal = selectFinal.children[selectFinal.selectedIndex].value;
-    transformaCripto(option);
-    transformaFinalcoin(optionFinal)
+    transformaNomes(option,optionFinal);
     console.log(optionFinal)
     var valorDigitado = document.querySelector('#valorEmCripto').value
     getPrice(valorDigitado,criptoName,finalCoinName, price => {
