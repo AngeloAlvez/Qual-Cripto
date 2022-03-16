@@ -46,7 +46,7 @@ function ativarBotao() {
     console.log(optionFinal)
     var valorDigitado = document.querySelector('#valorEmCripto').value
     getPrice(valorDigitado,criptoName,finalCoinName, price => {
-        document.getElementById('resultado').innerHTML = price
+        document.getElementById('resultado').innerHTML = price.toLocaleString('pt-br',{style: 'currency', currency:finalCoinName});
      })
 }
 /* 
