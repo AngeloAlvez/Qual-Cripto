@@ -1,74 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Qual Cripto | Conversor </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Qual Cripto | Conversor</title>
+    <link rel="icon" href="assets/img/icon.png">
+    
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/conversor.css">
+
+    <script src="assets/js/header.js" defer ></script>
+    <script src="assets/js/script.js" defer ></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-    <script src="assets/js/script.js" defer></script>
-    <link rel="icon" href="assets/img/icon.png">
+
 
 </head>
-<body>  
+<body>
     <header>
-        <div class="caixa">
-            <img src="assets/img/logo.png" id="logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">CONVERSOR</a></li>
-                    <li><a href="noticias.html">NOTÍCIAS</a></li>
-                    <li><a href="desenvolvedor.html">DESENVOLVEDOR</a></li>
-                </ul>
-            </nav>
-            <HR WIDTH=60% ALIGN=RIGHT color="#FFBD03">
-        </div>
-    </header>  
+        <nav>
+            <a href="index.html"><img id="logo-header" src="assets/img/logo.png" alt="Logo do Qual Cripto">
+            </a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="active-menu"><a href="index.html">Conversor</a></li>
+                <li><a href="index.html">Notícias</a></li>
+                <li><a href="desenvolvedor.html">Desenvolvedor</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <div class="conversor">
-            <h1 class="titulo-conversor">Qual Cripto®<br> você quer converter?</h1>  
-            <select id="cripto">
-                <option>PVU</option>
-                <option>BTC</option>
-                <option>ETH</option>
-            </select>
-            <input type="number"
-            name="valorEmCripto"
-            id="valorEmCripto"
-            class='input'
-
-            class="valor-cripto" required>
-
-            <h2 class="seta">&#10132</h2>
-
-            <select id="moeda-tradicional">
-                <option>BRL</option>
-                <option>USD</option>
-                <option>EUR</option>
-            </select>
-
-            <h2 id="resultado">  </h2>
-
-            <button class="cssbuttons-io-button"onClick='ativarBotao()'> Converter
-                <div class="icon">
-                  <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
-                </div>
-              </button>
-        </div>
- 
-    </main>
-
+        <div class="conversor-box">
+            <h1 class="titulo-conversor"><em>Qual Cripto®</em><br> você quer converter?</h1>  
+            <div class="linha-box">
+                <select id="cripto">
+                    <option>PVU</option>
+                    <option>BTC</option>
+                    <option>ETH</option>
+                </select>
+                <input type="number"name="valorEmCripto" id="valorEmCripto" class="valores">
+            </div>
+            <h2 class="seta">&#129047</h2>
+            <div class="linha-box">
+                <select id="moeda-tradicional">
+                    <option>BRL</option>
+                    <option>USD</option>
+                    <option>EUR</option>
+                </select>
+                <h2 id="resultado"></h2>
+            </div>
     
+            <button class="converter-btn" onClick='ativarBotao()'>Converter</button>
+
+
+
+
+            
+
+        </div>        
+
+    </main>
+    <!-- <script src="assets/js/header.js"></script>
+    <script src="assets/js/script.js"></script> -->
 </body>
-
-
-
-
-
-
 </html>
