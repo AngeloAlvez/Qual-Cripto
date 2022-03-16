@@ -13,11 +13,12 @@ a:hover{
 }
 #logo-header{
     width: 35%;
+    margin-left: 10px;
 }
 nav{
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Roboto Mono', monospace;
     font-size: 1em;
@@ -36,6 +37,7 @@ nav{
 .mobile-menu{
     cursor: pointer;
     display: none;
+    margin-right: 10px;
 }
 .mobile-menu div{
     width: 32px;

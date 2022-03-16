@@ -22,7 +22,7 @@
     width: 180px;
     border: none;
     padding-left: 10px;
-    background-color: #f1f0f038;
+    background-color: #f1f0f07c;
 }
 .conversor-box select{
     width: 80px;
@@ -34,13 +34,12 @@
     justify-content: center;
 }
 .seta{
-    font-size: 40px;
-    color: #FFBD03;
+    height: 50px;
 }
 #resultado{
     height:40px;
     width: 180px;
-    background-color: #f1f0f038;
+    background-color: #f1f0f07c;
     font-size: 17px;
     text-align: center;
     display: flex;
@@ -60,7 +59,7 @@
     color: #FFBD03;
     transition: 0.35s;
 }
-.converter-btn:hover,.converter-btn:active{
+.converter-btn:hover{
     color: #000000;
     border-color: black;
 }
