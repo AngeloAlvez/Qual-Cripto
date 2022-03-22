@@ -36,8 +36,8 @@ function nameTransform(option, optionFinal) {
 }
 //formata o resultado final e o mostra na tela
 function FinalFormat(price) {
-    parseFloat(price)
-    document.getElementById('resultado').innerHTML = price.toLocaleString('pt-br', { style: 'currency', currency: finalCoinName });
+    Math.floor(price)
+    document.getElementById('resultado').innerHTML = price.toLocaleString('pt-br', {style: 'currency', maximumFractionDigits:10,  currency: finalCoinName});
 }
 
 function ativarBotao() {
