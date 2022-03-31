@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Qual Cripto | Conversor</title>
     <link rel="icon" href="assets/img/icon.png">
-    
+
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/conversor.css">
 
-    <script src="assets/js/header.js" defer ></script>
-    <script src="assets/js/script.js" defer ></script>
+    <script src="assets/js/header.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +24,7 @@
 
 
 </head>
+
 <body>
     <header>
         <nav>
@@ -36,21 +38,21 @@
             <ul class="nav-list">
                 <li class="active-menu"><a href="index.html">Conversor</a></li>
                 <li><a href="noticias.html">Notícias</a></li>
-                <li><a href="desenvolvedor.html">Desenvolvedor</a></li>
+                <li><a target="_blank" href="https://angeloalvez.github.io">Desenvolvedor</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <div class="conversor-box">
-            <h1 class="titulo-conversor"><em>Qual Cripto®</em><br> você quer converter?</h1>  
+            <h1 class="titulo-conversor"><em>Qual Cripto®</em><br> você quer converter?</h1>
             <div class="linha-box">
                 <select id="cripto">
                     <option>PVU</option>
                     <option>BTC</option>
                     <option>ETH</option>
                 </select>
-                <input type="number"name="valorEmCripto" id="valorEmCripto" class="valores">
+                <input type="number" name="valorEmCripto" id="valorEmCripto" class="valores">
             </div>
             <img class="seta" src="assets/img/seta.png" alt="seta apontando pro resultado final da conversão">
             <div class="linha-box">
@@ -61,18 +63,19 @@
                 </select>
                 <h2 id="resultado"></h2>
             </div>
-    
+
             <button class="converter-btn" onClick='ativarBotao()'>Converter</button>
 
 
 
 
-            
 
-        </div>        
+
+        </div>
 
     </main>
     <!-- <script src="assets/js/header.js"></script>
     <script src="assets/js/script.js"></script> -->
 </body>
+
 </html>
