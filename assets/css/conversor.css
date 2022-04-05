@@ -1,8 +1,8 @@
-*{
-    font-family: 'roboto',monospace;
+* {
+    font-family: 'roboto', monospace;
 }
 
-.conversor-box{
+.conversor-box {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -11,33 +11,40 @@
     align-items: center;
 
 }
-.titulo-conversor{
+
+.titulo-conversor {
     font-size: 17px;
 }
-.conversor-box input, .conversor-box select{
+
+.conversor-box input,
+.conversor-box select {
     font-size: 17px;
     margin: 5px;
-    text-align:left;
+    text-align: left;
     height: 40px;
     width: 180px;
     border: none;
     padding-left: 10px;
     background-color: #f1f0f07c;
 }
-.conversor-box select{
-    width: 80px;
+
+.conversor-box select {
+    width: 120px;
 }
-.linha-box{
+
+.linha-box {
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.seta{
+
+.seta {
     height: 50px;
 }
-#resultado{
-    height:40px;
+
+#resultado {
+    height: 40px;
     width: 180px;
     background-color: #f1f0f07c;
     font-size: 17px;
@@ -48,7 +55,8 @@
     align-items: center;
     font-weight: 400;
 }
-.converter-btn{
+
+.converter-btn {
     margin-top: 10px;
     padding: 5px 10px;
     background-color: #ffffff;
@@ -59,16 +67,19 @@
     color: #FFBD03;
     transition: 0.2s;
 }
-.converter-btn:hover{
+
+.converter-btn:hover {
     color: #FFBD03;
     font-weight: bolder;
     padding: 7px 14px;
 }
-.converter-btn:active{
+
+.converter-btn:active {
     border-color: black;
 }
-@media screen and (max-width: 768px){
-    .converter-btn:active{
+
+@media screen and (max-width: 768px) {
+    .converter-btn:active {
         color: #000000;
         border-color: black;
     }

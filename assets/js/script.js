@@ -22,9 +22,18 @@ function getPrice(quantas, moedaEntrada, moedaSaida, callback) {
 //pega a seleção do input e transforma no ID necessário pra consumir a API
 function nameTransform(option, optionFinal) {
     switch (option) {
-        case 'BTC': criptoName = 'bitcoin'; break;
-        case 'ETH': criptoName = 'ethereum'; break;
+        case 'Bitcoin': criptoName = 'bitcoin'; break;
+        case 'Ethereum': criptoName = 'ethereum'; break;
         case 'PVU': criptoName = 'plant-vs-undead-token'; break;
+        case 'Cardano': criptoName = 'cardano'; break;
+        case 'Shiba Inu': criptoName = 'shiba-inu'; break;
+        case 'Doge Coin': criptoName = 'dogecoin'; break;
+        case 'BNB': criptoName = 'bnb'; break;
+        case 'Solana': criptoName = 'solana'; break;
+        case 'Axie Infinity': criptoName = 'axie-infinity'; break;
+        case 'Tether': criptoName = 'tether'; break;
+        case 'Terra Luna': criptoName = 'terra-luna'; break;
+        case 'Monero': criptoName = 'monero'; break;
         default: console.log("algo deu errado");
     }
     switch (optionFinal) {
