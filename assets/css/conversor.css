@@ -20,16 +20,12 @@
 .conversor-box select {
     font-size: 17px;
     margin: 5px;
-    text-align: left;
+    text-align: center;
     height: 40px;
     width: 180px;
     border: none;
     padding-left: 10px;
     background-color: #f1f0f07c;
-}
-
-.conversor-box select {
-    width: 120px;
 }
 
 .linha-box {
@@ -48,11 +44,11 @@
     width: 180px;
     background-color: #f1f0f07c;
     font-size: 17px;
-    text-align: center;
     display: flex;
     padding-left: 10px;
     margin: 5px;
     align-items: center;
+    justify-content: center;
     font-weight: 400;
 }
 

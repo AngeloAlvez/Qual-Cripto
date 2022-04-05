@@ -37,9 +37,9 @@ function nameTransform(option, optionFinal) {
         default: console.log("algo deu errado");
     }
     switch (optionFinal) {
-        case 'BRL': finalCoinName = 'brl'; break;
-        case 'USD': finalCoinName = 'usd'; break;
-        case 'EUR': finalCoinName = 'eur'; break;
+        case 'Real - BRL': finalCoinName = 'brl'; break;
+        case 'Dólar - USD': finalCoinName = 'usd'; break;
+        case 'Euro - EUR': finalCoinName = 'eur'; break;
         default: console.log("algo deu errado");
     }
 }
