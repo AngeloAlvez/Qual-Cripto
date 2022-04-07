@@ -14,7 +14,7 @@ function httpGetAsync(theUrl, callback) {
 function getPrice(quantas, moedaEntrada, moedaSaida, callback) {
     httpGetAsync(`https://api.coingecko.com/api/v3/simple/price?ids=${moedaEntrada}&vs_currencies=${moedaSaida}`, response => {
         callback(response[moedaEntrada][moedaSaida] * quantas)
-    })
+    }) 
 }
 // Exemplo da API \/ \/
 //https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=brl
@@ -28,7 +28,7 @@ function nameTransform(option, optionFinal) {
         case 'Cardano': criptoName = 'cardano'; break;
         case 'Shiba Inu': criptoName = 'shiba-inu'; break;
         case 'Doge Coin': criptoName = 'dogecoin'; break;
-        case 'BNB': criptoName = 'bnb'; break;
+        case 'BNB': criptoName = 'binancecoin'; break;
         case 'Solana': criptoName = 'solana'; break;
         case 'Axie Infinity': criptoName = 'axie-infinity'; break;
         case 'Tether': criptoName = 'tether'; break;
@@ -45,7 +45,6 @@ function nameTransform(option, optionFinal) {
 }
 //formata o resultado final e o mostra na tela
 function FinalFormat(price) {
-    Math.floor(price)
     document.getElementById('resultado').innerHTML = price.toLocaleString('pt-br', {style: 'currency', maximumFractionDigits:10,  currency: finalCoinName});
 }
 
@@ -62,3 +61,4 @@ function ativarBotao() {
 
 }
 
+// https://cryptoicons.org/api/icon/btc/200

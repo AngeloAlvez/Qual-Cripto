@@ -22,7 +22,7 @@
     margin: 5px;
     text-align: center;
     height: 40px;
-    width: 180px;
+    width: 150px;
     border: none;
     padding-left: 10px;
     background-color: #f1f0f07c;
@@ -41,7 +41,7 @@
 
 #resultado {
     height: 40px;
-    width: 180px;
+    width: 150px;
     background-color: #f1f0f07c;
     font-size: 17px;
     display: flex;
@@ -72,6 +72,43 @@
 
 .converter-btn:active {
     border-color: black;
+}
+
+.infos-secao {
+    margin-top: 20px;
+    background-color: #f7f7f7;
+    /* desabilitando função nova */
+    display: none;
+}
+
+.titulo-infos {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.infos-cripto {
+    display: flex;
+    justify-content: center;
+}
+
+.informacoes {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.informacoes img {
+    padding: 6px;
+}
+
+.informacoes ul {
+    padding-left: 20px;
+}
+
+.informacoes li {
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
